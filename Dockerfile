@@ -1,3 +1,4 @@
+# build from tensorflow image
 FROM f0nzie/rstudio-tensorflow
 MAINTAINER Alfonso Reyes
 
