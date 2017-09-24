@@ -7,11 +7,11 @@ USER rstudio
 
 ## install keras from within R
 RUN R -e "devtools::install_github('rstudio/keras')"
-RUN R -e "keras::install_keras()" 
+RUN R -e "keras::install_keras()"
 
 # add package kerasR
 RUN install2.r --error \
     kerasR
 
+# go back to root user
 USER root
-
